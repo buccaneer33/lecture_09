@@ -1,0 +1,39 @@
+FROM ubuntu
+
+#Install node.js
+RUN apt-get update
+RUN apt-get -y upgrade
+RUN apt-get install -y npm
+
+#make webpack global
+#RUN npm install webpack -g
+
+# Create app directory
+WORKDIR /app
+
+# Install application dependencies
+COPY package*.json /app/ 
+COPY webpack.config.js /app/ 
+COPY server.js /app/
+#RUN cd /app && ls
+
+# Install app dependencies
+RUN cd /app && \npm install
+
+#Bundle app source
+COPY src /app/src/
+COPY assets /app/assets
+COPY assets/font-awesome/fonts /app/fonts
+COPY assets/fontie-package/fonts /app/css/fonts
+#RUN cd /app/src/ && ls
+    
+# Start building project 
+RUN cd /app && \npm run build
+
+# Expose port
+EXPOSE 8080
+
+RUN cd /app && ls
+
+# Start server
+CMD [ "node", "server.js" ]

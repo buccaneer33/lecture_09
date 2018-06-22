@@ -1,0 +1,11 @@
+version: '2.2'
+services:
+  landing:
+    build:
+      context: ./code
+      dockerfile: Dockerfile
+    volumes:
+      - "./code/src:/app/src"
+      - "./code/assets:/app/assets"
+    ports:
+      - "8080:8080"

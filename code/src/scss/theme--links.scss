@@ -1,0 +1,61 @@
+.nav__link--theme{
+  background-color: $nav__bgc--color;
+  color: $nav__font--color;
+  text-decoration: none;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 8px;
+
+  &:hover{
+    color: $nav__font--hover;
+    background-color: lighten($nav__bgc--color, 20%);
+    transition: transform ease-in-out 0.5s;
+  }
+}
+.link--more{
+  text-decoration: none;
+  font-size: 13px;
+  color: $more__font--color;
+  cursor: pointer;
+  transition: transform ease-in-out .5s;
+
+  &:hover{
+    color: darken($more__font--color, 20%);
+    transition: transform ease-in-out 0.5s;
+  }
+}
+.submenu2--theme{
+  background-color: lighten($nav__bgc--color, 20%);
+
+}
+.nav__link2--theme{
+  background-color: lighten($nav__bgc--color, 20%);
+
+
+  &:hover{
+    color: darken($nav__font--hover, 40%);
+    background-color: lighten($nav__bgc--color, 40%);
+  }
+}
+.submenu4--theme{
+  background-color: lighten($nav__bgc--color, 40%);
+  color: darken($nav__font--hover, 60%);
+}
+.nav__link4--theme{
+  background-color: lighten($nav__bgc--color, 40%);
+  color: darken($nav__font--hover, 60%);
+
+  &:hover{
+    color: lighten($nav__bgc--color, 40%);
+    background-color: darken($nav__font--hover, 60%);
+  }
+}
+.nav__link5--theme{
+  background-color: lighten($nav__bgc--color, 40%);
+  color: darken($nav__font--hover, 60%);
+
+  &:hover{
+    color: lighten($nav__bgc--color, 40%);
+    background-color: darken($nav__font--hover, 60%);
+  }
+}

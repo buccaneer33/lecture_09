@@ -1,0 +1,112 @@
+.galery {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.galery__wrapper {
+	height: 400px;
+	margin: 0px auto;
+	position: relative;
+	width: 100%;
+}
+
+.galery__slider {
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+	width: inherit;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+.slides {
+	height: inherit;
+	opacity: 0;
+	position: absolute;
+	width: inherit;
+	z-index: 0;
+	transform: scale(1.5);
+	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+
+.slide1 { background-image: url(../img/1.jpg); }
+.slide2 { background-image: url(../img/2.jpg); }
+.slide3 { background-image: url(../img/3.jpg); }
+.slide4 { background-image: url(../img/4.jpg); }
+.slide5 { background-image: url(../img/5.jpg); }
+.slide6 { background-image: url(../img/6.jpg); }
+
+#slide1:checked ~ .galery__slider > .slide1,
+#slide2:checked ~ .galery__slider > .slide2,
+#slide3:checked ~ .galery__slider > .slide3,
+#slide4:checked ~ .galery__slider > .slide4,
+#slide5:checked ~ .galery__slider > .slide5,
+#slide6:checked ~ .galery__slider > .slide6 {
+	opacity: 1;
+	z-index: 1;
+	transform: scale(1);
+}
+
+.galery__wrapper > input {
+	display: none;
+}
+
+.galery__wrapper .controls {
+  right: 1%;
+  top: 0px;
+  z-index: 1;
+	margin-left: -98px;
+	position: absolute;
+}
+
+.galery__wrapper label {
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 8px;
+	border-radius: 50%;
+	transition: background ease-in-out .5s;
+}
+
+.galery__wrapper label:hover,
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4),
+#slide5:checked ~ .controls label:nth-of-type(5),
+#slide6:checked ~ .controls label:nth-of-type(6) {
+	background: #fff;
+}
+
+.galery__wrapper label:after {
+	border: 2px solid #fff;
+	content: " ";
+	display: block;
+	height: 12px;
+	left: -4px;
+	position: absolute;
+	top: -4px;
+	width: 12px;
+	border-radius: 50%;
+}
+.galery__slider-mess{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 250px;
+  //height: 50px;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  vertical-align: middle;
+  padding: 20px;
+  border-radius: 8px;
+  animation: blink-box  2s infinite ease-in-out;
+}
+@keyframes blink-box {
+     from {box-shadow: 0 0 3px #bbb;}
+     25%{box-shadow: 0 0 7px #eee;}
+     50% {box-shadow: 0 0 15px #fff;}
+     75%{box-shadow: 0 0 7px #eee;}
+     to {box-shadow: 0 0 3px #bbb;}
+ }
