@@ -7,11 +7,12 @@ const postcss           = require('postcss');
 let FaviconsPlugin      = require('favicons-webpack-plugin');
 var sass                = require('sass');
 const autoprefixer      = require('autoprefixer');
+const constants         = require("./constants");
 
 const config = {
 	mode: "production",
 	entry:
-	entry: [
+	entry:[
 		'./src/js/index.js',
 		'./src/scss/index.scss',
 	],
@@ -87,7 +88,7 @@ const config = {
 			title: 'Epam-Markup Http build',
 			minify: {collapseWhitespace: true},
 			filename: '../dist/index.html',
-			template: './src/template/index.html'
+			template: './src/html/template/index.html'
         }),
 	new FaviconsPlugin({
     logo: './src/favicon/favicon-2016.jpg',  

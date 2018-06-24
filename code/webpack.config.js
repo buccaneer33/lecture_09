@@ -10,7 +10,7 @@ const constants         = require("./constants");
 
 const config = {
 	mode: "development",
-	entry: [
+	entry:[
 		'./src/js/index.js',
 		'./src/scss/index.scss',
 	],
@@ -69,11 +69,11 @@ const config = {
 						  context: path.resolve(__dirname, "./fonts")
 						},
 					  } 
-				},{
+				},/*{
 					test: /\.html$/,
 					include: path.resolve(__dirname, 'src/html/includes'),
 					use: ['raw-loader']
-				  },
+				  },*/
 		]
   },
   plugins: [

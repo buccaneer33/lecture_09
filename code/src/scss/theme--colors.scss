@@ -1,0 +1,24 @@
+.body--theme{
+  background-color: $body__bgc--color;
+  color: $body__font--color;
+}
+.header--theme{
+  background-color: $nav__bgc--color;
+}
+.header__wrapper--theme{
+  background-color: $body__bgc--color;
+}
+.header__logo-title--theme{
+  color: $header__font--color;
+}
+.header__slogan-part--theme{
+  color: $slogan__font--color;
+}
+.button--search{
+  border: $nav__bgc--color;
+  background-color: $nav__bgc--color;
+  color: $nav__font--color;
+  font-size: 12px;
+  padding: 4px;
+  margin: 0 0 0 -4px;
+}
