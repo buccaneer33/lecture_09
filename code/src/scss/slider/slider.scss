@@ -59,18 +59,19 @@
 	left: 0;
 	top: 0;
 	background-color: rgba(0, 0, 0, 0.5);
-  padding: 134px 16px 0 28px;
+  padding: 133px 18px 0 30px;
 	text-align: left;
 
 	& > h5{
 		font-size: 28px;
 	}
 	& > p{
-		font-size: 13px;
+		font-size: 15px;
 		font-family: 'Georgia', sans-serif !important;
 		padding-top: 14px;
-    letter-spacing: -0.1px;
+    letter-spacing: 0.3px;
     line-height: 22.4px;
+		font-weight: lighter;
 	}
 	& > a{
 		font-size: 16px;
@@ -94,7 +95,32 @@
 	background-color: rgba(255, 255, 255, 0.9);
 	margin-right: 9px;
 	margin-left: 2px;
+
 }
 .carousel-indicators .active{
 	background-color: rgba(255, 255, 255, 0.1);
+}
+@media (max-width: 720px) {
+	.carousel-control-prev {
+				left: 3%;
+
+	}
+	.carousel-control-next {
+		right: 3%;
+	}
+	.carousel-indicators li{
+		width: 140px;
+	}
+ }
+@media (max-width: 540px) {
+	.carousel-control-prev {
+				left: 2%;
+
+	}
+	.carousel-control-next {
+		right: 2%;
+	}
+	.carousel-indicators li{
+	//	width: 140px;
+	}
 }

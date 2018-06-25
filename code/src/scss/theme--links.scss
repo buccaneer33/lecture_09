@@ -1,9 +1,9 @@
 .navigation__link--theme{
   color:$nav__font--color;
-  font-size: 13.5px;
-  letter-spacing: -0.45px;
+  font-size: 0.85rem;
+  letter-spacing: -0.54px;
   font-weight: 400;
-  padding: 15px 14.7px;
+  padding: 16px 14.8px 14px 15.6px;
   text-decoration: none;
   transition: ease-in-out 0.4s;
 
@@ -18,4 +18,22 @@
   color: $more__font--color;
   font-size: 13px;
   letter-spacing: 0.2px;
+}
+@media (max-width: 960px) {
+   .navigation__link--theme{
+     font-size: 0.65rem;
+     padding: 16px 7px 14px 7px;
+   }
+  }
+@media (max-width: 720px) {
+  .navigation__link--theme{
+    font-size: 0.65rem;
+    padding: 16px 6px 14px 6px;
+    }
+ }
+@media (max-width: 540px) {
+  .navigation__link--theme{
+    font-size: 0.65rem;
+    padding: 16px 3px 14px 3px;
+    }
 }
