@@ -22,3 +22,22 @@
   padding: 4px;
   margin: 0 0 0 -4px;
 }
+.navigation--theme{
+
+}
+.title--theme{
+  font-size: 16px;
+  color: $header__font--color;
+}
+.item--theme{
+  font-size: 13px;
+  color: $body__font--color;
+}
+.border-top--theme{
+    border-top: 1px solid $border--color;
+}
+.footer--theme{
+    background-color: $border--color;
+    color: $slogan__font--color;
+    font-size: 13px;
+}

@@ -1,0 +1,45 @@
+.info{
+  padding: 26px 0;
+
+}
+.events{
+
+  &__title{
+    //padding-bottom: 11px;
+  }
+}
+.event_item{
+  padding-top: 11px;
+  padding-bottom: 0px;
+  margin-bottom: -3px;
+
+  &__link{
+
+  }
+  &__date{
+    padding-top: 4px;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+  &__desc{
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+.video{
+
+  &__title{
+    padding-bottom: 15px;
+    letter-spacing: 0.1px;
+  }
+  &__desc{
+    padding: 6px 0 0 0;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 10px;
+  }
+  &__film{
+    height: 235px;
+    width: 100%;
+  }
+}

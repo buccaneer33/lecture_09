@@ -1,0 +1,29 @@
+.news-block{
+  padding: 0px 10px 34px;
+}
+.news-item{
+  padding-left: 5px;
+  padding-right: 5px;
+
+  &__img{
+    width: 97%;
+    height: 180px;
+  }
+  &__title{
+    font-size: 16px;
+    color: $header__font--color;
+    padding-top: 12px;
+  }
+  &__desc{
+    font-size: 13px;
+    color: $body__font--color;
+    line-height: 19px;
+    margin-bottom: 4px;
+  }
+  &__link{
+    font-size: 13px;
+    color: $more__font--color;
+    padding-left: 0px;
+    letter-spacing: 0.5px;
+  }
+}

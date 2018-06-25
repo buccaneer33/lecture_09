@@ -1,0 +1,45 @@
+.personal{
+
+  &__title{
+
+  }
+  &__item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 15px 0;
+  }
+  &__img-block{
+    padding: 4px;
+    width: 90px;
+    height: 90px;
+    border: 1px solid $border--color;
+  }
+  &__img{
+
+  }
+  &__info-block{
+    padding: 0 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+
+  }
+  &__name{
+    font-weight: bold;
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+  }
+  &__desc{
+    margin: 0;
+    font-size: 14px;
+    padding: 5px 4px 0px 0px;
+  }
+  &__link{
+    font-size: 14px;
+    padding: 0 0 5px 0;
+    letter-spacing: -0.2px;
+  }
+}

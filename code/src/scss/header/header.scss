@@ -9,56 +9,88 @@
     align-items: center;
     display: flex;
   }
+  &__inner{
+    padding: 0;
+  }
   &__logo-block{
-    @extend .col-md-3;
+    @extend .col-12;
+    @extend .col-sm-6;
+    @extend .col-md-5;
+    @extend .col-lg-4;
+    //@extend .col-xl-3;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    padding: 0;
+    padding: 8px 0 0 2px;
 
   }
   &__logo{
     display: inline-block;
-    padding: 0 5px 0 0;
+    padding: 0 7px 0 0;
 
     &-title{
       font-size: 46px;
     }
   }
-  &__slogan{
-    padding: 0 0 0 5px;
+  &__divider{
+    width: 1px;
+    height: 25px;
     border-left: 1px solid $slogan__font--color;
+  }
+  &__slogan{
+    padding: 3px 18px 0px 6px;
+
 
     &-part{
       display: block;
       font-size: 12px;
+      letter-spacing: 0.5px;
+      padding: 0 0 0px 0;
+      margin: -2px 0 0 0;
     }
   }
   &__search{
-      @extend .col-md-3;
+    @extend .col-12;
+    @extend .col-sm-6;
+    @extend .col-md-5;
+    @extend .col-lg-4;
+    //@extend .col-xl-3;
+    padding: 0 13px 0 0;
+    margin-right: 2px;
 
     &-form{
-
+      //@extend .no-gutters;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      align-items: stretch;
+      height: 36px;
     }
     &-input{
+      flex-grow: 2;
       border: 1px solid #dddddd;
-      padding: 3px;
+      padding: 5px 3px 3px 9px;
       color: $nav__bgc--color;
       font-size: 12px;
+      width: 203px;
 
       &::placeholder {
         color: $nav__bgc--color;
+        letter-spacing: 0.5px;
       }
     }
     &-button{
-
+      flex-grow: 1;
+      padding: 4px 0px 4px 0px;
+      margin: 0 0 0 0px;
     }
   }
 }
 .header__logo-title b{
-    font-weight: 700;
+    font-weight: 500;
     font-variant: small-caps;
     font-size: 36px;
 }

@@ -1,0 +1,21 @@
+.navigation__link--theme{
+  color:$nav__font--color;
+  font-size: 13.5px;
+  letter-spacing: -0.45px;
+  font-weight: 400;
+  padding: 15px 14.7px;
+  text-decoration: none;
+  transition: ease-in-out 0.4s;
+
+
+  &:hover{
+    color: $nav__font--hover;
+    text-decoration: none;
+    transition: ease-in-out 0.4s;
+  }
+}
+.link--more{
+  color: $more__font--color;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+}
