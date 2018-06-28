@@ -53,33 +53,39 @@
 		height: 30px;
 }
 .carousel-caption{
-	width: 31%;
+	width: 31.2%;
 	height: 100%;
 	position: absolute;
 	left: 0;
 	top: 0;
 	background-color: rgba(0, 0, 0, 0.5);
-  padding: 133px 18px 0 30px;
+  padding: 139px 18px 0 29px;
 	text-align: left;
 
 	& > h5{
-		font-size: 28px;
+		font-size: 25px;
+    letter-spacing: -0.1px;
+    padding: 0 0 0 1px;
 	}
 	& > p{
-		font-size: 15px;
-		font-family: 'Georgia', sans-serif !important;
-		padding-top: 14px;
-    letter-spacing: 0.3px;
-    line-height: 22.4px;
-		font-weight: lighter;
+			font-size: 14px;
+		  //font-family: 'SD Georgia Light', serif !important;
+			padding: 13px 0 0 0px;
+			letter-spacing: -0.05px;
+			line-height: 22.4px;
+			font-weight: 200;
+		  font-family: 'Martel', serif;
 	}
 	& > a{
-		font-size: 16px;
+		font-size: 14px;
     color: #ffffff;
-    display: block;
-    text-align: center;
-		margin-left: 62%;
-    padding-top: 5px;
+		display: block;
+    width: 50%;
+    text-align: right;
+    margin-left: 46.6%;
+    padding-top: 8px;
+    letter-spacing: 0.4px;
+    font-weight: 200;
 
 		&:hover{
 			color: darken($nav__font--color, 10%);

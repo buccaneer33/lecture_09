@@ -1,5 +1,5 @@
 .info{
-  padding: 26px 0;
+  padding: 29px 0 24px;
 
 }
 .events{
@@ -11,32 +11,34 @@
 .event_item{
   padding-top: 11px;
   padding-bottom: 0px;
-  margin-bottom: -3px;
+  margin-bottom: -4px;
 
   &__link{
 
   }
   &__date{
     padding-top: 4px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0px;
     margin-bottom: 4px;
   }
   &__desc{
-    font-size: 14px;
+    font-size: 13px;
     line-height: 19px;
+    letter-spacing: -0.3px;
   }
 }
 .video{
 
   &__title{
-    padding-bottom: 15px;
-    letter-spacing: 0.1px;
+    padding: 0 0 13px 1px;
+    letter-spacing: 0.5px;
   }
   &__desc{
-    padding: 6px 0 0 0;
+    padding: 8px 0 0 0;
     font-size: 14px;
-    line-height: 19px;
+    line-height: 18.5px;
     margin-bottom: 10px;
+    letter-spacing: -0.8px;
   }
   &__film{
     height: 235px;

@@ -1,9 +1,9 @@
 .navigation__link--theme{
   color:$nav__font--color;
   font-size: 0.85rem;
-  letter-spacing: -0.54px;
+  letter-spacing: -0.74px;
   font-weight: 400;
-  padding: 16px 14.8px 14px 15.6px;
+  padding: 16px 15.8px 14px 14px;
   text-decoration: none;
   transition: ease-in-out 0.4s;
 
@@ -17,7 +17,9 @@
 .link--more{
   color: $more__font--color;
   font-size: 13px;
-  letter-spacing: 0.2px;
+  letter-spacing: -0.2px;
+  padding: 0px 0 0 0px;
+  margin-left: -1px;
 }
 @media (max-width: 960px) {
    .navigation__link--theme{

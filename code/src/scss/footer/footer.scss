@@ -9,9 +9,13 @@
     }
     &__copyright{
       padding: 1px 0 2px 0px;
-      letter-spacing: 0px;
+      letter-spacing: -0.1px;
+      font-size: 12px;
     }
     &__template{
       text-align: right;
+      padding: 1px 0 2px 0px;
+      letter-spacing: -0.1px;
+      font-size: 12px;
     }
 }

@@ -18,22 +18,25 @@
   border: $nav__bgc--color;
   background-color: $nav__bgc--color;
   color: $nav__font--color;
-  font-size: 12px;
-  padding: 4px;
-  margin: 0 0 0 -4px;
+  font-size: 11px;
 }
 .navigation--theme{
 
 }
 .title--theme{
-  font-size: 16px;
+  font-size: 14px;
   color: $header__font--color;
+  font-weight: 300;
+  letter-spacing: 0.3px;
 }
 .item--theme{
   font-size: 13px;
   color: $body__font--color;
 }
-.border-top--theme{
+.border-top__big--theme{
+    border-top: 1.5px solid $border--color;
+}
+.border-top__small--theme{
     border-top: 1px solid $border--color;
 }
 .footer--theme{
